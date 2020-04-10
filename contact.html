@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Form</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="AmandaWebsite.css">
+</head>
+<body>
+	<nav class="zone purple sticky">
+		<ul class="main-nav">
+			<li class="nav-img"><img class="list-img" src="ClassroomImage.png"></li>
+			<li class="nav-txt"><a href="AmandaWebsite.html">HOME</a></li>
+			<li class="nav-txt"><a href="">MY CLASSROOM</a></li>
+			<li class="nav-txt"><a href="">ACADEMIC</a></li>
+			<li class="nav-txt"><a href="Assignment.html">ASSIGNMENTS</a></li>
+			<li class="nav-txt"><a href="Lessons.html">LESSONS & NEWS</a></li>
+			<li class="nav-txt"><a href="contact.html">CONTACT</a></li>
+		</ul>
+	</nav>
+	<div id="map"></div>
+	<script>
+	// Initialize and add the map
+	function initMap() {
+	    // The location of Uluru
+	    var uluru = {lat: 35.169963, lng: -101.881682};
+	    // The map, centered at Uluru
+	    var map = new google.maps.Map(
+	        document.getElementById('map'), {zoom: 16, center: uluru});
+	        // The marker, positioned at Uluru
+	    var marker = new google.maps.Marker({position: uluru, map: map});
+	}
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvqilp3GlZHlBzkw-IUNoVli70kChg4a0&callback=initMap">
+	</script>
+	<div class="center-txt">Contact Me</div>
+	<p>The above map shows the location of Paramount Terrace Elementary where you can visit me during school hours. The best way to contact me is via email. Please click on the button below to directly send me an email through the website. Thank you.</p>
+	<div class="center">
+		<a href="">
+    		<button class="btn btn-primary btn-xl">Email Mrs. Rios</button>
+    	</a>		
+	</div>
+	<footer class="zone purple">
+		<section>
+			<div>
+				<button class="facebook-btn"></button>
+				<button class="twitter-btn"></button>
+				<button class="insta-btn"></button>
+			</div>
+			<div class="foot-txt">© Copyright 2018 Rios Productions</div>			
+		</section>
+		<!-- <hr width="1" size="130"> -->
+		<div class="vertical"></div>
+		<section>
+			<div>
+				<div class="contact-txt">Contact Me</div>
+				<div class="foot-txt">Tel: 806-206-5151</div>
+				<div class="foot-txt">Email: jrios4177@outlook.com</div>
+			</div>
+		</section>
+		<div class="vertical"></div>
+		<!-- <hr width="1" size="130"> -->
+		<section>
+			<div>
+				<div class="contact-txt">Address</div>
+				<div class="foot-txt">6501 Meister St.</div>
+				<div class="foot-txt">Amarillo, TX 79119</div>
+			</div>
+		</section>
+	</footer>
+</body>
+</html>
